@@ -1,0 +1,325 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    /* url("https://content.invisioncic.com/Msigames/monthly_2017_11/default.png.3d4e7426110c72e198753d458acd75ba.png"); */
+    background: rgb(32,34,36);
+    background: linear-gradient(178deg, rgba(32,34,36,1) 0%, rgba(69,76,82,0.7875525210084033) 35%, rgba(0,212,255,0) 100%), url("https://content.invisioncic.com/Msigames/monthly_2017_11/default.png.3d4e7426110c72e198753d458acd75ba.png");;
+    background-size: cover;
+
+    /* background: rgb(255,240,0);
+    background: linear-gradient(180deg, rgba(255,240,0,1) 0%, rgba(255,248,143,0.5326505602240896) 15%, rgba(173,173,173,0) 100%), url("https://content.invisioncic.com/Msigames/monthly_2017_11/default.png.3d4e7426110c72e198753d458acd75ba.png"); */
+}
+.sidebar {
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+}
+.sidebar-item {
+    color: white;
+    padding: 10px 5px 10px 25px;
+    font-size: 14px;
+}
+.sidebar-break {
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+    width: 100%;
+    /* margin: 5px 0; */
+}
+.sidebar-item:hover {
+    cursor: pointer;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 100px auto;
+    /* background-color: lightcyan; */
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 30%;
+    /* background-color: lightgrey; */
+    opacity: 0.8;
+    color: rgb(61, 123, 184);
+}
+
+.header a {
+    color: rgb(61, 123, 184);
+    text-decoration: transparent;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.header-settings {
+    justify-self: end;
+    padding: 10px;
+    justify-items: center;
+}
+
+/* .header-rows {
+    display: grid;
+    grid-template-rows: auto auto;
+} */
+
+.header-title {
+    font-size: 24px;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* color: rgb(52, 105, 157); */
+}
+
+.header-subtitle {
+    margin-left: 80px;
+    font-size: 12px;
+    /* color: rgb(52, 105, 157); */
+}
+
+.header-options {
+    /* background-color: lightgoldenrodyellow; */
+    grid-column: 1 / -1;
+}
+
+.header-options-item {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    /* color: rgb(52, 105, 157); */
+}
+
+.header-options-item.selected {
+    border-bottom: 3px solid rgb(61, 123, 184);
+    padding-bottom: 5px;
+}
+
+.header-button {
+    background-color: rgba(1,1,1,0.6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.header-button.less-important {
+    background-color: rgba(1,1,1,0.3);
+}
+
+.header-button.small {
+    font-size: 12px;
+}
+
+.header-button:hover {
+    background-color: rgba(1,1,1,0.8);
+    cursor: pointer;
+}
+
+.content {
+    /* background-color: rgba(255,255,255,0.9); */
+    /* background-color: darkslategrey; */
+    opacity: 0.85;
+    border-radius: 8px;
+    /* padding: 10px; */
+    margin: 10px;
+    color: white;
+}
+
+
+.news {
+    display: grid;
+    grid-template-columns: 400px auto;
+    height: 100%;
+}
+
+.news-listbox {
+    background-color: rgb(208, 216, 220);
+    color: black;
+    padding: 15px;
+    border-radius: 8px 0 0 8px;
+}
+
+.news-content {
+    background-color: rgb(236, 239, 241);
+    color: black;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.news-listbox-header {
+    background-color: rgb(166, 173, 176);
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.news-listbox-item {
+    padding: 12px;
+    font-size: 14px;
+    color: rgb(100, 124, 138);
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30% auto;
+}
+
+.news-listbox-item:hover {
+    background-color: rgb(211, 218, 222);
+    cursor: pointer;
+}
+
+.news-listbox-item.selected {
+    color: white;
+    background-color: rgb(0, 137, 123);
+}
+
+.news-listbox-item.selected:hover {
+    cursor: default;
+}
+
+.news-listbox-item .author {
+    font-size: 12px;
+    display: inline;
+}
+
+.news-listbox-item .time {
+    font-size: 12px;
+    justify-self: end;
+}
+
+.news-listbox-item .title {
+    grid-column: 1 / -1;
+    margin-left: 5px;
+}
+
+.news-content-header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.news-content-header .tags {
+    justify-self: end;
+    font-size: 12px;
+    color: rgb(165, 131, 197);
+}
+
+.news-content-header .time {
+    justify-self: end;
+    font-size: 12px;
+}
+
+.news-content-header .author {
+    font-size: 12px;
+    margin-left: 80px;
+}
+
+.news-content-header .title {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.news-content-header .divider {
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    margin-top: 10px;
+    grid-column: 1 / -1;
+}
+
+.news-content-text {
+    margin-top: 10px;
+}
+
+.news-content-text a {
+    color: black;
+    border-bottom: 1px dotted rgb(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.news-content-text a:hover {
+    border-bottom-style: solid;
+}
+
+.modal-background {
+    display: none;
+    background-color: rgb(0,0,0, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal {
+    /* background-color: darkslategray; */
+    background-color: rgb(236, 239, 241, 0.9);
+    height: 30%;
+    color: black;
+    animation-name: show-modal;
+    animation-duration: 0.3s;
+}
+
+@keyframes show-modal {
+    from {height: 0%; display: block};
+    to {height: 30%}
+}
+
+.squad {
+    background-color: darkslategray;
+    border-radius: 8px;
+    height: 98%;
+    padding: 8px;
+    display: grid;
+    /* grid-template-columns: 4% 3% 50% auto auto auto auto auto auto auto auto; */
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-auto-rows: min-content;
+}
+
+.squad-column {
+    color: lightgray;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.squad-column-divider {
+    border-bottom: 1px solid grey;
+    grid-column: 1 / -1;
+    align-self: flex-start;
+}
+
+.squad-item {
+    font-size: 12px;
+    /* background-color: rgb(255,255,255,0.1); */
+    padding: 5px;
+    align-self: center;
+}
+
+
+.squad-row, .squad-header {
+    display: grid;
+    grid-template-columns: 0.1fr 0.05fr 1fr repeat(8, 0.18fr);
+}
+
+.squad-row {
+    background-color: rgb(255,255,255,0.05);
+}
+
+.squad-row:nth-of-type(even) {
+    background-color: rgb(255,255,255,0.0);
+}
+
+.squad-row:hover {
+    background-color: rgb(255,255,255,0.2);
+}
+
+.squad-item.pos-selector {
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.5);
+}

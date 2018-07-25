@@ -1,0 +1,10 @@
+.navbar-item {
+    color: white;
+    padding: 8px 22px;
+    font-size: 12px;
+}
+
+.navbar-item:hover {
+    background-color: #111313;
+    cursor: pointer;
+}

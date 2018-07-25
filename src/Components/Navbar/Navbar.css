@@ -1,0 +1,7 @@
+.navbar {
+    background-color: #40454b;
+    max-width: 150px;
+    min-width: 150px;
+    height: 100vh;
+    flex: 0 0 10%;
+}

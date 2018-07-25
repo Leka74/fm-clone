@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    /* flex: 1; */
+}
+
+.header-club {
+    color: #3d7bb8;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.header-club:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header-manager {
+    color: #3d7bb8;
+    font-size: 14px;
+    margin-left: 80px;
+    /* display: inline; */
+}
+
+.header-manager:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

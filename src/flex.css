@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* filter: blur(1px); */
+}
+
+.sidebar {
+    background-color: #40454b;
+    color: white;
+    height: 100vh;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.sidebar-item {
+    color: white;
+    padding: 8px 22px;
+    font-size: 12px;
+}
+
+.sidebar-item:hover {
+    background-color: #111313;
+    cursor: pointer;
+}
+
+.main {
+    background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 60%, rgba(112,112,112,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(60%, rgba(87,87,87,1)), color-stop(100%, rgba(112,112,112,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 60%, rgba(112,112,112,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 60%, rgba(112,112,112,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 60%, rgba(112,112,112,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 60%, rgba(112,112,112,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#707070', GradientType=0 );
+
+
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-club {
+    color: #3d7bb8;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.header-club:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header-manager {
+    color: #3d7bb8;
+    font-size: 14px;
+    margin-left: 80px;
+    /* display: inline; */
+}
+
+.header-manager:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #40454b;
+    padding: 6px 9px;;
+    border-radius: 6px;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* float: right; */
+    /* margin-top: 18px; */
+    margin-right: 5px;
+    color: white;
+    margin-top: 25%;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #111313;
+}
+
+.news {
+    background-color: white;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 5px;
+    top: 80px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    left: 200px;
+}
+
+.shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    /* display: none; */
+}
